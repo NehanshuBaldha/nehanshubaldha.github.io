@@ -1,20 +1,37 @@
+/* Base */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
   background: #0f172a;
   color: #e5e7eb;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.75;
 }
 
+/* Layout */
 header {
   padding: 4rem 2rem;
   max-width: 900px;
   margin: auto;
 }
 
+section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+/* Typography */
 h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .subtitle {
@@ -25,6 +42,7 @@ h1 {
   max-width: 600px;
 }
 
+/* Hero Actions */
 .actions a {
   display: inline-block;
   margin-right: 1rem;
@@ -33,6 +51,12 @@ h1 {
   color: #000;
   text-decoration: none;
   border-radius: 6px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.actions a:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .actions .secondary {
@@ -41,36 +65,49 @@ h1 {
   border: 1px solid #38bdf8;
 }
 
-section {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 2rem;
+/* Availability */
+.availability {
+  margin-top: 1.5rem;
+  color: #94a3b8;
 }
 
+/* Cards Grid */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
-.cards li {
+/* Cards & Projects */
+.cards li,
+.project {
   list-style: none;
   background: #020617;
   padding: 1rem;
   border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cards li:hover,
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .project {
-  background: #020617;
-  padding: 1rem;
   margin-bottom: 1rem;
-  border-radius: 8px;
 }
 
+.project p {
+  margin: 0.4rem 0;
+}
+
+/* Tech Tags */
 .tags {
   color: #38bdf8;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem;
