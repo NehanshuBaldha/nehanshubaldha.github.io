@@ -146,28 +146,55 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Project Navigation (Modern) */
 .project-nav {
   max-width: 900px;
-  margin: 3rem auto 0;
-  padding: 0 2rem;
+  margin: 5rem auto 2rem;
+  padding: 1.5rem 2rem;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  font-weight: 500;
+  gap: 1rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
 }
 
-.project-nav a {
+.nav-left {
+  text-align: left;
+}
+
+.nav-center {
+  text-align: center;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+/* Navigation Links */
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
   color: #38bdf8;
   text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.project-nav a:hover {
-  text-decoration: underline;
+.nav-link:hover {
+  background: rgba(56, 189, 248, 0.12);
+  transform: translateY(-1px);
 }
 
-.project-nav span {
-  display: block;
+/* Center link slightly muted */
+.nav-link.center {
+  color: #94a3b8;
 }
+
+.nav-link.center:hover {
+  background: rgba(148, 163, 184, 0.12);
+}
+
 
 
 /* Footer */
