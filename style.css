@@ -128,11 +128,14 @@ a:hover {
 
 .breadcrumbs {
   max-width: 900px;
-  margin: 1rem auto 0;
+  margin: 1.5rem auto 0;
   padding: 0 2rem;
   font-size: 0.9rem;
   color: #94a3b8;
+  box-sizing: border-box;
+  opacity: 0.9;
 }
+
 
 .breadcrumbs a {
   color: #38bdf8;
@@ -143,6 +146,28 @@ a:hover {
   text-decoration: underline;
 }
 
+.project-nav {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  font-weight: 500;
+}
+
+.project-nav a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.project-nav a:hover {
+  text-decoration: underline;
+}
+
+.project-nav span {
+  display: block;
+}
 
 
 /* Footer */
