@@ -54,6 +54,11 @@ h2 {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+.actions a::after {
+  content: " ↗";
+  font-size: 0.9em;
+}
+
 .actions a:hover {
   opacity: 0.9;
   transform: translateY(-1px);
@@ -106,6 +111,16 @@ h2 {
 .tags {
   color: #38bdf8;
 }
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 /* Footer */
 footer {
