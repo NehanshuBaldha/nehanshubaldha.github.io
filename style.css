@@ -68,7 +68,6 @@
   
   .actions a {
     display: inline-block;
-    margin-right: 1rem;
     padding: 0.6rem 1rem;
     background: #38bdf8;
     color: #000;
@@ -262,7 +261,7 @@
   
     .actions a {
       display: block;
-      width: 100%;
+      max-width: 100%;
       text-align: center;
       margin-bottom: 0.75rem;
     }
