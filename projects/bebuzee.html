@@ -1,97 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bebuzee | Flutter Project – Nehanshu Baldha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bebuzee Super App | Flutter Case Study – Nehanshu Baldha</title>
+
+  <link rel="canonical" href="https://nehanshubaldha.github.io/projects/bebuzee.html" />
   <link rel="stylesheet" href="../style.css" />
-  <meta name="description" content="Case study of Bebuzee, a large-scale social media & super app built with Flutter. Features scalable architecture, GetX state management, Firebase integration, and production releases." />
 
-  <meta property="og:title" content="Bebuzee — Flutter Social Media & Super App" />
-  <meta property="og:description" content="Senior Flutter Developer case study: Bebuzee social media & super app built using Flutter, GetX, Firebase, and REST APIs for real users." />
+  <meta name="description"
+    content="Technical case study of Bebuzee, a large-scale Flutter Super App spanning social media, ShortBuz video streaming, WebRTC calling, and multi-gateway payments." />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://nehanshubaldha.github.io/projects/bebuzze.html" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Bebuzee — Flutter Social Media & Super App" />
-  <meta name="twitter:description" content="Flutter case study of a scalable social media & super app using GetX and Firebase." />
-
+  <meta property="og:url" content="https://nehanshubaldha.github.io/projects/bebuzee.html" />
+  <meta property="og:title" content="Bebuzee Super App — Senior Flutter Developer Case Study" />
+  <meta property="og:description"
+    content="Detailed engineering breakdown of Bebuzee Super App built with Flutter, GetX, WebRTC, Socket.IO, and native platform channels." />
+  <meta property="og:image" content="https://nehanshubaldha.github.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://nehanshubaldha.github.io/og-image.png" />
 </head>
 
 <body>
 
-<header>
-  <h1>Bebuzee — Social Media & Super App</h1>
-  <p class="subtitle">Senior Flutter Developer • Production Application</p>
-</header>
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
 
-<nav class="breadcrumbs">
-  <a href="../index.html">Home</a> /
-  <span>Projects</span> /
-  <span>Bebuzee</span>
-</nav>
+  <!-- Ambient Cursor Glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
 
+  <!-- ================= STICKY NAVIGATION ================= -->
+  <header>
+    <nav class="site-nav scrolled" aria-label="Project Navigation">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-brand">
+          <span>Nehanshu Baldha</span>
+          <span class="brand-badge">PORTFOLIO</span>
+        </a>
 
-<section>
-  <h2>Project Overview</h2>
-  <p>
-    Bebuzee is a large-scale social media and super app built for real users,
-    with continuous feature development and production releases.
-  </p>
-</section>
+        <div class="nav-actions">
+          <a href="../index.html#work" class="btn btn-secondary btn-sm">← All Projects</a>
+          <a href="../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-<section>
-  <h2>My Role</h2>
-  <p>
-    I worked as a Senior Flutter Developer, owning feature development,
-    performance optimization, bug fixing, and Play Store releases.
-  </p>
-</section>
+  <main>
 
-<section>
-  <h2>What I Built</h2>
-  <ul class="cards">
-    <li>Scalable Flutter architecture using GetX</li>
-    <li>REST API and Firebase integrations</li>
-    <li>Push notifications and real-time features</li>
-    <li>Crash fixing and performance improvements</li>
-  </ul>
-</section>
+    <!-- ================= CASE STUDY HERO ================= -->
+    <header class="case-study-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#work">Projects</a>
+          <span>/</span>
+          <span style="color: var(--text-secondary);">Bebuzee Super App</span>
+        </nav>
 
-<section>
-  <h2>Tech Stack</h2>
-  <div class="tags">
-    Flutter • Dart • GetX • Firebase • REST APIs • FCM
-  </div>
-</section>
+        <div class="section-tag">Case Study · Production Super App</div>
+        <h1 class="case-study-title">Bebuzee Super App</h1>
+        <p class="case-study-subtitle">Social, Media &amp; Commerce Platform</p>
 
-<section>
-  <h2>Outcome</h2>
-  <p>
-    The app is live in production, serving real users with ongoing
-    updates and long-term maintenance.
-  </p>
-</section>
+        <div class="case-meta-grid">
+          <div>
+            <div class="meta-box-label">Role</div>
+            <div class="meta-box-val">Senior Flutter Developer</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Timeline</div>
+            <div class="meta-box-val">Sep 2023 – Present</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Platforms</div>
+            <div class="meta-box-val">Android &amp; iOS</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Key Tech</div>
+            <div class="meta-box-val">Flutter, GetX, WebRTC, Socket.IO</div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<!-- <section>
-  <a href="../index.html" class="secondary">← Back to Portfolio</a>
-</section> -->
+    <!-- ================= OVERVIEW & CONTEXT ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="case-grid-2col">
+          <div>
+            <div class="section-tag">Overview</div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 1rem;">Project Overview</h2>
+            <p style="color: var(--text-secondary); line-height: 1.75; font-size: 1.05rem;">
+              Bebuzee is a high-capacity mobile Super App designed to consolidate multiple digital services into a
+              unified, fluid mobile ecosystem. The platform encompasses social networking, short-form video streaming
+              (ShortBuz), real-time direct and group messaging, WebRTC-powered voice and video calls, e-commerce
+              shopping, property listings, skilled on-demand services, creator monetization, and advertising.
+            </p>
+          </div>
 
-<section class="project-nav">
-  <div class="nav-left"></div>
+          <div class="case-card">
+            <h3>Product Context &amp; Objectives</h3>
+            <p>
+              When joining the engineering effort, the primary objective was to modernize an existing large-scale
+              production application. This involved refactoring legacy architectural bottlenecks, stabilizing
+              authentication flows, engineering the ShortBuz short-form video feature, and integrating reliable
+              multi-gateway payment infrastructure for global commercial transactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="nav-center">
-    <a href="../index.html" class="nav-link center">All Projects</a>
-  </div>
+    <!-- ================= MY ROLE & CONTRIBUTIONS ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Core Responsibilities</div>
+          <h2 class="section-title">My Technical Contributions</h2>
+          <p class="section-desc">
+            As Senior Flutter Developer, I spearheaded architecture modernizations and complex multimedia feature
+            developments.
+          </p>
+        </div>
 
-  <div class="nav-right">
-    <a href="pet-marketplace.html" class="nav-link">Next →</a>
-  </div>
-</section>
+        <div class="expertise-grid">
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Architecture &amp; Stability</h3>
+            <p>
+              Refactored legacy controllers and fragmented state implementations into a clean, modular architecture.
+              Streamlined app initialization and persistent authentication workflows to eliminate crash vectors.
+            </p>
+          </div>
 
-<footer>
-  <p>© 2026 Nehanshu Baldha</p>
-</footer>
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">ShortBuz Video Engine</h3>
+            <p>
+              Engineered the ShortBuz short-form video feed from the ground up, implementing pre-caching, smooth swipe
+              transitions, player recycling, and memory optimizations for continuous playback.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Real-Time Audio &amp; Video</h3>
+            <p>
+              Integrated WebRTC peer-to-peer and relayed audio/video calling protocols, paired with Socket.IO for
+              real-time signaling, call status negotiation, and low-latency chat messaging.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Native Platform Channels</h3>
+            <p>
+              Wrote native platform channel code in Kotlin (Android) and Swift (iOS) to handle platform-specific
+              hardware acceleration, background task management, and deep system capabilities.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Payments &amp; Checkout</h3>
+            <p>
+              Implemented multi-gateway payment processing supporting Stripe, PayPal, and Apple Pay for in-app shopping,
+              service booking, and creator tipping flows.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Store Release Pipeline</h3>
+            <p>
+              Coordinated production releases, app bundling, keystore security, and guideline compliance for ongoing
+              Google Play Store and Apple App Store updates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNICAL IMPLEMENTATION ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Deep Dive</div>
+          <h2 class="section-title">Technical Architecture &amp; Implementation</h2>
+          <p class="section-desc">
+            Architected for modularity to support dozens of interconnected sub-services without cross-module
+            regressions.
+          </p>
+        </div>
+
+        <div class="case-grid-2col">
+          <div class="case-card">
+            <h3>State Management &amp; Data Pipeline</h3>
+            <p style="margin-bottom: 1rem;">
+              Adopted GetX for reactive dependency injection and targeted widget rebuilds, preventing expensive
+              full-tree repaints during high-frequency events like video playback and real-time chat updates.
+            </p>
+            <p>
+              The data layer uses structured repository patterns that isolate RESTful API communication, token refresh
+              interceptors, and local caching from presentation UI.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3>Real-Time Signaling Flow</h3>
+            <div class="workflow-step-chain">
+              <div class="step-node">
+                <span class="step-node-num">01</span>
+                <span>User initiates call → Socket.IO signaling event dispatched</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">02</span>
+                <span>SDP offer/answer exchange &amp; ICE candidate negotiation</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">03</span>
+                <span>Direct WebRTC peer connection established with fallback TURN</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">04</span>
+                <span>Hardware-accelerated audio/video streams rendered on canvas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHALLENGES & SOLUTIONS ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Engineering Problem Solving</div>
+          <h2 class="section-title">Challenges &amp; Solutions</h2>
+        </div>
+
+        <div class="case-grid-2col">
+          <div class="case-card">
+            <h3 style="color: var(--accent-amber);">Challenge: Video Feed Memory Bloat</h3>
+            <p>
+              In short-form vertical video feeds, loading consecutive high-resolution video players rapidly exhausts GPU
+              and RAM budgets on mid-range Android devices, causing out-of-memory crashes and dropped frames.
+            </p>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">Solution Implemented:
+              </h4>
+              <p>
+                Implemented a 3-player recycling pool that disposes of players beyond a 1-item window, coupled with
+                proactive chunk preloading and native texture surface caching.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-amber);">Challenge: Cross-Platform Payment Consistency</h3>
+            <p>
+              Integrating multiple distinct payment SDKs (Stripe, PayPal, Apple Pay) across both iOS and Android created
+              fragmented checkout states and conditional failure modes.
+            </p>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">Solution Implemented:
+              </h4>
+              <p>
+                Engineered an abstracted Payment Gateway Service with unified status callbacks, idempotent webhook
+                confirmations, and localized retry routines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECH STACK & LINKS ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Stack &amp; Delivery</div>
+          <h2 class="section-title">Verified Technologies &amp; Live App</h2>
+        </div>
+
+        <div class="tech-badges" style="margin-bottom: 3rem;">
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Flutter</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Dart</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">GetX State Management</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">WebRTC</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Socket.IO</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Kotlin</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Swift</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">REST APIs</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Firebase Auth &amp; FCM</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Stripe</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">PayPal</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Apple Pay</span>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://play.google.com/store/apps/details?id=com.bebuzee.inc&hl=en_IN" target="_blank"
+            rel="noopener" class="btn btn-primary">
+            <span>View on Google Play ↗</span>
+          </a>
+          <a href="https://apps.apple.com/in/app/bebuzee/id6478946575" target="_blank" rel="noopener"
+            class="btn btn-secondary">
+            <span>View on Apple App Store ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGINATION NAVIGATION ================= -->
+    <nav class="project-pagination container" aria-label="Project Case Studies">
+      <div></div>
+      <div>
+        <a href="skilled-services-marketplace.html" class="btn btn-outline">
+          <span>Next Project: Skilled Services Marketplace →</span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nehanshu Baldha. All rights reserved.</p>
+      <a href="../index.html" class="contact-link">Back to Homepage ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const progressBar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      if (progressBar && totalHeight > 0) {
+        progressBar.style.width = (scrollTop / totalHeight * 100) + '%';
+      }
+    }, { passive: true });
+  </script>
 
 </body>
+
 </html>

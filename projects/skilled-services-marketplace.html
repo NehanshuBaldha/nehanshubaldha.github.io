@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skilled Services Marketplace | Flutter Case Study – Nehanshu Baldha</title>
+
+  <link rel="canonical" href="https://nehanshubaldha.github.io/projects/skilled-services-marketplace.html" />
+  <link rel="stylesheet" href="../style.css" />
+
+  <meta name="description"
+    content="Technical case study of Skilled Services Marketplace, a two-sided Flutter platform with real-time bidding, Google Maps background location, and conditional payments." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://nehanshubaldha.github.io/projects/skilled-services-marketplace.html" />
+  <meta property="og:title" content="Skilled Services Marketplace — Flutter Case Study" />
+  <meta property="og:description"
+    content="Engineering breakdown of a two-sided customer and worker mobile marketplace built with Flutter, Google Maps, WebSockets, and Stripe." />
+  <meta property="og:image" content="https://nehanshubaldha.github.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://nehanshubaldha.github.io/og-image.png" />
+</head>
+
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Cursor Glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ================= STICKY NAVIGATION ================= -->
+  <header>
+    <nav class="site-nav scrolled" aria-label="Project Navigation">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-brand">
+          <span>Nehanshu Baldha</span>
+          <span class="brand-badge">PORTFOLIO</span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="../index.html#work" class="btn btn-secondary btn-sm">← All Projects</a>
+          <a href="../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= CASE STUDY HERO ================= -->
+    <header class="case-study-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#work">Projects</a>
+          <span>/</span>
+          <span style="color: var(--text-secondary);">Skilled Services Marketplace</span>
+        </nav>
+
+        <div class="section-tag">Case Study · Two-Sided Platform</div>
+        <h1 class="case-study-title">Skilled Services Marketplace</h1>
+        <p class="case-study-subtitle">Customer &amp; Worker Service Platform</p>
+
+        <div class="case-meta-grid">
+          <div>
+            <div class="meta-box-label">Role</div>
+            <div class="meta-box-val">Flutter Developer</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Target Audience</div>
+            <div class="meta-box-val">Customers &amp; Skilled Workers</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Platforms</div>
+            <div class="meta-box-val">iOS &amp; Android</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Key Tech</div>
+            <div class="meta-box-val">Flutter, Google Maps, WebSockets, Stripe</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= OVERVIEW & CONTEXT ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="case-grid-2col">
+          <div>
+            <div class="section-tag">Overview</div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 1rem;">Project Overview</h2>
+            <p style="color: var(--text-secondary); line-height: 1.75; font-size: 1.05rem;">
+              Skilled Services Marketplace is an on-demand, two-sided mobile platform engineered to connect residential
+              and business customers with vetted, specialized trade workers (plumbers, electricians, HVAC technicians,
+              general maintenance). The system handles dynamic dispatching, real-time geolocation tracking, multimedia
+              work proof verification, and automated milestone escrow payments.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3>Product Context &amp; Objectives</h3>
+            <p>
+              Traditional home and field service booking suffers from opaque pricing, unverified arrival times, and
+              contentious payment disputes. The objective was to build a real-time, transparent mobile platform with
+              synchronized bi-directional state between customer and worker apps, ensuring safety, verified job
+              completion, and fraud-resistant transactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= END-TO-END WORKFLOW DIAGRAM ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">User Journey</div>
+          <h2 class="section-title">The Complete Marketplace Lifecycle</h2>
+          <p class="section-desc">
+            Visualized end-to-end execution chain connecting both sides of the marketplace.
+          </p>
+        </div>
+
+        <div class="workflow-step-chain">
+          <div class="step-node">
+            <span class="step-node-num">01</span>
+            <div>
+              <strong style="color: #fff;">Customer Request:</strong> Customer browses trade categories, enters project
+              scope, and triggers on-demand dispatch or scheduled booking.
+            </div>
+          </div>
+          <div class="step-node">
+            <span class="step-node-num">02</span>
+            <div>
+              <strong style="color: #fff;">Worker Acceptance &amp; Navigation:</strong> Nearby verified workers receive
+              broadcast alerts with job specifics; upon acceptance, turn-by-turn route navigation initiates.
+            </div>
+          </div>
+          <div class="step-node">
+            <span class="step-node-num">03</span>
+            <div>
+              <strong style="color: #fff;">Live GPS Tracking:</strong> Background location service broadcasts worker
+              coordinates via WebSocket/Socket.IO onto customer's Google Map in real time.
+            </div>
+          </div>
+          <div class="step-node">
+            <span class="step-node-num">04</span>
+            <div>
+              <strong style="color: #fff;">On-Site Job Execution:</strong> Worker marks arrival, clocks job start, and
+              accesses client notes and access guidelines.
+            </div>
+          </div>
+          <div class="step-node">
+            <span class="step-node-num">05</span>
+            <div>
+              <strong style="color: #fff;">Multimedia Verification Proof:</strong> Worker captures mandatory
+              before/after photos and video proof through camera integrations.
+            </div>
+          </div>
+          <div class="step-node">
+            <span class="step-node-num">06</span>
+            <div>
+              <strong style="color: #fff;">Review &amp; Escrow Release:</strong> Customer inspects work, submits
+              rating/review, and triggers automated release of Stripe/PayPal escrow payment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MY ROLE & RESPONSIBILITIES ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Engineering Focus</div>
+          <h2 class="section-title">My Technical Responsibilities</h2>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Dual User Journey Architecture</h3>
+            <p>
+              Developed dedicated role-based view layers and state controllers catering to customer booking versus
+              worker dispatch, ensuring clean separation of business logic.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Google Maps &amp; Background Geolocation</h3>
+            <p>
+              Implemented persistent background GPS location streaming with battery-aware throttling, custom map
+              markers, polyline route calculation, and geofenced arrival triggers.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Real-Time Event Sockets</h3>
+            <p>
+              Architected WebSocket and Socket.IO real-time channels for instant job broadcast, bid acceptance, live
+              driver movement, and in-app customer-worker chat.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Escrow &amp; Conditional Payments</h3>
+            <p>
+              Integrated Stripe and PayPal payment authorization holds that capture funds at booking and release payout
+              to workers only after digital customer signoff.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Proof Capture Pipeline</h3>
+            <p>
+              Engineered camera, photo, and compressed video upload modules with local thumbnail generation and cloud
+              storage upload progress indicators.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">International Client Collaboration</h3>
+            <p>
+              Maintained direct technical communication with international product stakeholders, conducting sprint
+              demos, troubleshooting edge cases, and steering App Store releases.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHALLENGES & SOLUTIONS ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Engineering Challenges</div>
+          <h2 class="section-title">Key Challenges Solved</h2>
+        </div>
+
+        <div class="case-grid-2col">
+          <div class="case-card">
+            <h3 style="color: var(--accent-amber);">Challenge: Mobile Battery Drain from Continuous GPS</h3>
+            <p>
+              High-frequency GPS updates rapidly drain worker device batteries and risk being suspended by iOS and
+              Android OS background process throttles.
+            </p>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">Solution Implemented:
+              </h4>
+              <p>
+                Implemented dynamic distance-filter intervals: location broadcasts adaptively scale between
+                high-frequency (when moving >15 km/h) and idle low-power modes (when stationary).
+              </p>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-amber);">Challenge: Real-Time Race Conditions During Job Bidding</h3>
+            <p>
+              When multiple service providers attempt to accept the same job dispatch broadcast simultaneously, socket
+              latency could create double-booking conflicts.
+            </p>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">Solution Implemented:
+              </h4>
+              <p>
+                Architected an optimistic UI state with server-acknowledged atomic locks, gracefully notifying
+                subsequent bidders if the ticket was claimed milliseconds prior.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECH STACK & LINKS ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Stack &amp; Delivery</div>
+          <h2 class="section-title">Technologies &amp; Verified Product</h2>
+        </div>
+
+        <div class="tech-badges" style="margin-bottom: 3rem;">
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Flutter</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Dart</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Google Maps SDK</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Background Location</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">WebSocket / Socket.IO</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Firebase FCM</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Stripe Escrow</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">PayPal</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">REST APIs</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Camera &amp; Video
+            Compression</span>
+        </div>
+
+        <div>
+          <a href="https://apps.apple.com/us/app/workerlot-provider/id1578978009" target="_blank" rel="noopener"
+            class="btn btn-primary">
+            <span>View Workerlot on Apple App Store ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGINATION NAVIGATION ================= -->
+    <nav class="project-pagination container" aria-label="Project Case Studies">
+      <div>
+        <a href="bebuzee.html" class="btn btn-outline">
+          <span>← Previous: Bebuzee Super App</span>
+        </a>
+      </div>
+      <div>
+        <a href="basil-pos.html" class="btn btn-outline">
+          <span>Next: Basil POS →</span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nehanshu Baldha. All rights reserved.</p>
+      <a href="../index.html" class="contact-link">Back to Homepage ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const progressBar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      if (progressBar && totalHeight > 0) {
+        progressBar.style.width = (scrollTop / totalHeight * 100) + '%';
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+
+</html>

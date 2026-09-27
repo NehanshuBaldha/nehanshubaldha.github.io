@@ -1,572 +1,950 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nehanshu Baldha | Senior Flutter Developer</title>
-  <link rel="sitemap" type="application/xml" href="sitemap.xml">
 
-  <meta name="description" content="Senior Flutter Developer with 5+ years of experience building production-ready Android & iOS apps. Expert in Flutter, GetX, Firebase, and scalable mobile architecture." />
+  <link rel="canonical" href="https://nehanshubaldha.github.io/" />
+  <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+  <link rel="stylesheet" href="style.css" />
 
-  <meta name="keywords" content="Flutter Developer, Senior Flutter Developer, Mobile App Developer, Flutter Firebase, GetX, Android iOS Developer, Remote Flutter Developer" />
-
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Nehanshu Baldha | Senior Flutter Developer" />
+  <meta name="description"
+    content="Senior Flutter Developer with 5+ years of experience building production mobile applications, marketplaces, Super Apps, POS systems, and real-time platforms." />
+  <meta name="keywords"
+    content="Senior Flutter Developer, Flutter Developer, Mobile Application Engineer, Flutter Android, iOS Flutter, Bebuzee, GetX, Clean Architecture, Remote Mobile Developer" />
   <meta name="author" content="Nehanshu Baldha" />
+  <meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="Nehanshu Baldha | Senior Flutter Developer" />
-  <meta property="og:description" content="Building scalable, production-ready Flutter applications for startups and businesses. 5+ years experience. Remote." />
+  <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nehanshubaldha.github.io/" />
+  <meta property="og:title" content="Nehanshu Baldha | Senior Flutter Developer" />
+  <meta property="og:description"
+    content="Senior Flutter Developer with 5+ years of experience building production mobile applications, marketplaces, Super Apps, POS systems, and real-time platforms." />
+  <meta property="og:image" content="https://nehanshubaldha.github.io/og-image.png" />
 
-  <meta name="twitter:card" content="summary" />
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://nehanshubaldha.github.io/" />
   <meta name="twitter:title" content="Nehanshu Baldha | Senior Flutter Developer" />
-  <meta name="twitter:description" content="Senior Flutter Developer specializing in Flutter, GetX, Firebase, and scalable mobile apps." />
-
-  <link rel="stylesheet" href="style.css" />
+  <meta name="twitter:description"
+    content="Senior Flutter Developer with 5+ years of experience building production mobile applications, marketplaces, Super Apps, POS systems, and real-time platforms." />
+  <meta name="twitter:image" content="https://nehanshubaldha.github.io/og-image.png" />
 </head>
+
 <body>
-  
-  <div id="cursor-glow"></div>
 
-  <div id="scroll-progress"></div>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <div class="hire-badge">
-  Available for Hire
-</div>
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
 
-  <div id="preloader">
-  <div class="intro-text">
-    <h1>
-      <span>Nehanshu N.</span>
-      <span>Baldha</span>
-    </h1>
-    <p class="role">Senior Flutter Developer</p>
-  </div>
-</div>
+  <!-- Ambient Cursor Glow Spotlight -->
+  <div id="cursor-glow" aria-hidden="true"></div>
 
-<header class="hero">
+  <!-- ================= STICKY NAVIGATION ================= -->
+  <header>
+    <nav class="site-nav" id="navbar" aria-label="Main Navigation">
+      <div class="container nav-inner">
+        <a href="#hero" class="nav-brand" aria-label="Nehanshu Baldha Homepage">
+          <span>Nehanshu Baldha</span>
+          <span class="brand-badge">SR. FLUTTER DEV</span>
+        </a>
 
-  <div class="hero-left">
-    <h1 class="gradient-text">Nehanshu Baldha</h1>
-    <p class="subtitle">
-Senior Flutter Engineer • Building Scalable Mobile Products • Remote Worldwide
-</p>
+        <ul class="nav-links">
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#process" class="nav-link">Workflow</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-    <p class="intro">
-      Senior Flutter Developer with <strong>5+ years of experience</strong> building
-      <strong>production-ready Android & iOS applications</strong> for startups and businesses.
-      <br><br>
-      Specialized in clean architecture, GetX state management,
-      Firebase integrations, and scalable systems.
-    </p>
+        <div class="nav-actions">
+          <a href="resume/Nehanshu-Baldha.pdf" target="_blank" class="btn btn-outline btn-sm">Resume ↗</a>
+          <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+          <button class="nav-toggle" id="menuToggle" aria-expanded="false" aria-label="Toggle Navigation Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <div class="actions">
-      <a href="#projects" class="motion">View My Work</a>
-      <a href="#contact" class="secondary">Hire Me</a>
-      <a href="resume/Nehanshu-Baldha.pdf" target="_blank" class="secondary">
-        Download Resume
-      </a>
-    </div>
-
-    <p class="availability">
-      Available for <strong>part-time (15–25 hrs/week)</strong> or project-based remote work
-    </p>
-  </div>
-
-  <div class="hero-right">
-    <img src="profile.jpeg" alt="Nehanshu Baldha">
-  </div>
-
-</header>
-
-<section class="metrics">
-
-  <div class="metric">
-    <h3>5+ Years</h3>
-    <p>Professional Flutter Experience</p>
-  </div>
-
-  <div class="metric">
-    <h3>10+ Apps</h3>
-    <p>Production Mobile Applications</p>
-  </div>
-
-  <div class="metric">
-    <h3>100K+</h3>
-    <p>Users Reached Across Platforms</p>
-  </div>
-
-  <div class="metric">
-    <h3>99%+</h3>
-    <p>Crash-Free Production Stability</p>
-  </div>
-
-</section>
-
-<section class="authority">
-  <h2>Trusted by Teams Worldwide</h2>
-  <div class="authority-grid">
-    <div>
-      <h3>🌍 Global Clients</h3>
-      <p>Worked with startups and teams across USA, India & remote-first companies.</p>
-    </div>
-
-    <div>
-      <h3>🚀 Production Experience</h3>
-      <p>Multiple live apps on Play Store with real users and active deployments.</p>
-    </div>
-
-    <div>
-      <h3>📈 Startup-Focused</h3>
-      <p>Experienced in building MVP → scaling architecture without rewrites.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>What I Do</h2>
-
-<ul class="cards">
-  <li>
-    <h3>Flutter App Development</h3>
-    <p>
-      End-to-end Flutter development for Android & iOS —
-      from architecture and UI to APIs, Firebase, and production releases.
-    </p>
-  </li>
-
-  <li>
-    <h3>Startup MVPs & Scaling</h3>
-    <p>
-      Helping startups go from idea → MVP → production,
-      with code that scales and doesn’t need rewrites later.
-    </p>
-  </li>
-
-  <li>
-    <h3>Performance & Stability</h3>
-    <p>
-      Improving app performance, fixing crashes,
-      and maintaining long-term stability in live production apps.
-    </p>
-  </li>
-</ul>
-
-</section>
-
-<section id="experience">
-  <h2>Professional Experience</h2>
-
-  <div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-      <h3>Senior Flutter Developer</h3>
-      <p class="timeline-company">Remote • 2021 – Present</p>
-      <p>
-        Leading Flutter development for production-scale applications,
-        focusing on clean architecture, performance optimization,
-        Firebase integrations, and scalable mobile systems.
-      </p>
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul class="mobile-links">
+      <li><a href="#work" class="mobile-nav-link">Work</a></li>
+      <li><a href="#expertise" class="mobile-nav-link">Expertise</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#process" class="mobile-nav-link">Workflow</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <a href="resume/Nehanshu-Baldha.pdf" target="_blank" class="btn btn-outline">Download Resume ↗</a>
+      <a href="#contact" class="btn btn-primary mobile-nav-link">Let's Work Together</a>
     </div>
   </div>
 
-  <div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-      <h3>Flutter Developer</h3>
-      <p class="timeline-company">2019 – 2021</p>
-      <p>
-        Built MVPs and marketplace applications for startups,
-        implemented state management solutions, API integrations,
-        and production deployment workflows.
-      </p>
+  <main id="main-content">
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span>Available for Freelance &amp; Contract Projects</span>
+          </div>
+
+          <h1 class="hero-headline">
+            I build <span class="gradient-text">production-grade</span> mobile products.
+          </h1>
+
+          <p class="hero-positioning">
+            Senior Flutter Developer · Mobile Application Engineer | Flutter &amp; Android
+          </p>
+
+          <p class="hero-bio">
+            Senior Flutter Developer with 5+ years of experience building production mobile applications, marketplaces,
+            Super Apps, POS systems, and real-time platforms. I turn complex business workflows into reliable, scalable
+            mobile products.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Let's Work Together</a>
+            <a href="resume/Nehanshu-Baldha.pdf" target="_blank" class="btn btn-outline">Download Resume ↗</a>
+          </div>
+
+          <div class="hero-anchors">
+            <div class="anchor-item">
+              <span class="anchor-value">5+ Years</span>
+              <span class="anchor-label">Experience</span>
+            </div>
+            <div class="anchor-item">
+              <span class="anchor-value">Flutter &amp; Android</span>
+              <span class="anchor-label">Multiplatform</span>
+            </div>
+            <div class="anchor-item">
+              <span class="anchor-value">Production</span>
+              <span class="anchor-label">App Store &amp; Play Store</span>
+            </div>
+            <div class="anchor-item">
+              <span class="anchor-value">Production</span>
+              <span class="anchor-label">Mobile Apps</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-avatar-wrap">
+              <picture>
+                <source srcset="profile.webp" type="image/webp" />
+                <img src="profile.jpg" alt="Nehanshu Baldha - Senior Flutter Developer" class="hero-avatar" width="600"
+                  height="600" loading="eager" />
+              </picture>
+            </div>
+            <div class="hero-floating-pill">
+              <span>⚡ Flutter • Android • Real-Time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PROJECTS SECTION ================= -->
+    <section id="work">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Featured Work</div>
+          <h2 class="section-title">Production-Grade Mobile Applications</h2>
+          <p class="section-desc">
+            Engineered for high reliability, complex workflows, hardware integrations, and scale.
+          </p>
+        </div>
+
+        <!-- 1. FLAGSHIP SPOTLIGHT: BEBUZEE SUPER APP -->
+        <div class="flagship-spotlight">
+          <article class="project-card-flagship reveal-on-scroll">
+            <div class="flagship-info">
+              <div>
+                <div class="flagship-badge">FLAGSHIP PROJECT · SUPER APP</div>
+                <h3 class="flagship-title">Bebuzee Super App</h3>
+                <p class="flagship-desc">Social, Media &amp; Commerce Platform</p>
+                <p class="flagship-summary">
+                  Large-scale Flutter Super App integrating social networking, ShortBuz video streaming, real-time
+                  messaging, WebRTC calling, and multi-gateway payments across Android and iOS.
+                </p>
+                <div class="tech-badges">
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">Dart</span>
+                  <span class="tech-tag">GetX</span>
+                  <span class="tech-tag">WebRTC</span>
+                  <span class="tech-tag">Socket.IO</span>
+                  <span class="tech-tag">Stripe &amp; Apple Pay</span>
+                </div>
+              </div>
+
+              <div class="project-cta-group">
+                <a href="projects/bebuzee.html" class="btn btn-primary btn-sm">Explore Case Study →</a>
+                <a href="https://play.google.com/store/apps/details?id=com.bebuzee.inc&hl=en_IN" target="_blank"
+                  rel="noopener" class="store-badge">Google Play ↗</a>
+                <a href="https://apps.apple.com/in/app/bebuzee/id6478946575" target="_blank" rel="noopener"
+                  class="store-badge">App Store ↗</a>
+              </div>
+            </div>
+
+            <!-- Stylized Flagship Super App UI Canvas -->
+            <div class="project-canvas-wrap" aria-hidden="true">
+              <div class="ui-canvas">
+                <div class="canvas-header">
+                  <div class="canvas-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="canvas-tag">Super App Ecosystem</span>
+                </div>
+
+                <div class="canvas-body">
+                  <div class="bebuzee-app-bar">
+                    <span style="font-weight: 800; font-size: 0.95rem; color: #fff;">Bebuzee</span>
+                    <div class="bebuzee-pill-strip">
+                      <span class="bebuzee-pill active">ShortBuz</span>
+                      <span class="bebuzee-pill">Feed</span>
+                      <span class="bebuzee-pill">Shop</span>
+                      <span class="bebuzee-pill">Calls</span>
+                    </div>
+                  </div>
+
+                  <div class="bebuzee-video-hero">
+                    <div class="video-play-indicator">▶ Video Playback</div>
+                    <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">ShortBuz Video</div>
+                    <div style="font-size: 0.78rem; color: var(--accent-cyan); margin-top: 0.2rem;">Video Player &amp;
+                      Playback Controls</div>
+                  </div>
+
+                  <div class="bebuzee-ecosystem-cards">
+                    <div class="eco-card">
+                      <div class="eco-title">💬 Messages &amp; Calls</div>
+                      <div class="eco-sub">Real-Time Audio &amp; Video</div>
+                    </div>
+                    <div class="eco-card">
+                      <div class="eco-title">🛍️ Shop &amp; Checkout</div>
+                      <div class="eco-sub">In-App Payments</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 2x2 BALANCED GRID FOR REMAINING 4 PROJECTS -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 2: SKILLED SERVICES MARKETPLACE -->
+          <article class="project-card-compact reveal-on-scroll">
+            <div class="project-canvas-wrap" aria-hidden="true">
+              <div class="ui-canvas">
+                <div class="canvas-header">
+                  <div class="canvas-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="canvas-tag">Worker Location &amp; Dispatch</span>
+                </div>
+
+                <div class="canvas-body">
+                  <div class="market-map-surface">
+                    <div class="map-worker-pin">📍 Worker En Route</div>
+                    <div class="map-route-bar">
+                      <span>Live Location</span>
+                      <span style="color: var(--accent-cyan); font-weight: 700;">Navigation</span>
+                    </div>
+                  </div>
+
+                  <div class="market-flow-bar">
+                    <div>
+                      <div style="font-weight: 700; font-size: 0.82rem; color: #fff;">Booking Confirmed</div>
+                      <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.1rem;">Service Request ·
+                        Job In Progress</div>
+                    </div>
+                    <span
+                      style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-emerald); font-weight: 700; background: rgba(52,211,153,0.12); padding: 0.2rem 0.5rem; border-radius: 4px;">Payment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="compact-info">
+              <h3 class="compact-title">Skilled Services Marketplace</h3>
+              <p class="compact-desc">Customer &amp; Worker Service Platform</p>
+              <div class="tech-badges">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Google Maps</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Payments</span>
+              </div>
+              <div class="project-cta-group">
+                <a href="projects/skilled-services-marketplace.html" class="btn btn-primary btn-sm">Explore Case Study
+                  →</a>
+                <a href="https://apps.apple.com/us/app/workerlot-provider/id1578978009" target="_blank" rel="noopener"
+                  class="store-badge">App Store ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: BASIL POS -->
+          <article class="project-card-compact reveal-on-scroll">
+            <div class="project-canvas-wrap" aria-hidden="true">
+              <div class="ui-canvas">
+                <div class="canvas-header">
+                  <div class="canvas-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="canvas-tag">Restaurant POS &amp; Kitchen Display</span>
+                </div>
+
+                <div class="canvas-body">
+                  <div class="pos-order-panel">
+                    <div
+                      style="display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 700; color: var(--accent-cyan); margin-bottom: 0.4rem;">
+                      <span>Current Order</span>
+                      <span>Order Summary</span>
+                    </div>
+                    <div class="pos-ticket-line">
+                      <span>Order Items</span>
+                      <span style="color: var(--text-muted);">Item Details</span>
+                    </div>
+                    <div class="pos-ticket-line">
+                      <span>Modifiers &amp; Notes</span>
+                      <span style="color: var(--text-muted);">Pricing</span>
+                    </div>
+                  </div>
+
+                  <div class="pos-kds-badge">
+                    <span>🍳 Kitchen Display (KDS)</span>
+                    <span>Ticket Sync</span>
+                  </div>
+
+                  <div class="pos-terminal-widget">
+                    <span>💳 Payment &amp; Card Reader</span>
+                    <span>Receipt</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="compact-info">
+              <h3 class="compact-title">Basil POS</h3>
+              <p class="compact-desc">Restaurant POS &amp; Management System</p>
+              <div class="tech-badges">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Payment Hardware</span>
+                <span class="tech-tag">KDS</span>
+                <span class="tech-tag">Receipt Printers</span>
+              </div>
+              <div class="project-cta-group">
+                <a href="projects/basil-pos.html" class="btn btn-primary btn-sm">Explore Case Study →</a>
+                <a href="https://play.google.com/store/apps/details?id=com.basilPOS" target="_blank" rel="noopener"
+                  class="store-badge">Google Play ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: PETORIZ -->
+          <article class="project-card-compact reveal-on-scroll">
+            <div class="project-canvas-wrap" aria-hidden="true">
+              <div class="ui-canvas">
+                <div class="canvas-header">
+                  <div class="canvas-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="canvas-tag">Pet Care &amp; Products Marketplace</span>
+                </div>
+
+                <div class="canvas-body">
+                  <div class="pet-booking-card">
+                    <div style="font-weight: 700; font-size: 0.85rem; color: #fff;">Veterinary Appointment</div>
+                    <div style="font-size: 0.75rem; color: var(--accent-cyan); margin-top: 0.2rem;">Appointment Booking
+                      &amp; Schedule</div>
+                  </div>
+
+                  <div class="pet-services-grid">
+                    <div class="pet-chip">🏥 Available Services</div>
+                    <div class="pet-chip">✂️ Pet Products</div>
+                  </div>
+
+                  <div class="pet-cart-status">
+                    <span>🛒 Cart &amp; Checkout</span>
+                    <span>Saved Payment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="compact-info">
+              <h3 class="compact-title">Petoriz</h3>
+              <p class="compact-desc">Pet Products &amp; Services Marketplace</p>
+              <div class="tech-badges">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">GetX</span>
+                <span class="tech-tag">Saved Payments</span>
+                <span class="tech-tag">SQLite Cache</span>
+              </div>
+              <div class="project-cta-group">
+                <a href="projects/petoriz.html" class="btn btn-primary btn-sm">Explore Case Study →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: TEXTBOOKME -->
+          <article class="project-card-compact reveal-on-scroll">
+            <div class="project-canvas-wrap" aria-hidden="true">
+              <div class="ui-canvas">
+                <div class="canvas-header">
+                  <div class="canvas-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="canvas-tag">Student Marketplace</span>
+                </div>
+
+                <div class="canvas-body">
+                  <div class="textbook-search-bar">
+                    <span>🔍 Search &amp; Discovery</span>
+                    <span style="color: var(--accent-cyan);">Filter</span>
+                  </div>
+
+                  <div class="textbook-listing-item">
+                    <div class="book-cover-mock"></div>
+                    <div class="book-meta-mock">
+                      <div class="book-title-mock">Textbook Listing</div>
+                      <div class="book-sub-mock">Course Material · Listing Details</div>
+                      <div class="book-price-mock">Price &amp; Details</div>
+                    </div>
+                  </div>
+
+                  <div class="campus-loc-badge">
+                    <span>📍 Seller &amp; Location</span>
+                    <span style="font-weight: 700;">Student Chat</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="compact-info">
+              <h3 class="compact-title">TextBookMe</h3>
+              <p class="compact-desc">Student Textbook Marketplace · Canada</p>
+              <div class="tech-badges">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Android SDK</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Location Services</span>
+              </div>
+              <div class="project-cta-group">
+                <a href="projects/textbookme.html" class="btn btn-primary btn-sm">Explore Case Study →</a>
+                <a href="https://play.google.com/store/apps/details?id=com.bookselling.app" target="_blank"
+                  rel="noopener" class="store-badge">Google Play ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENGINEERING EXPERTISE SECTION ================= -->
+    <section id="expertise">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Technical Depth</div>
+          <h2 class="section-title">Engineering Expertise</h2>
+          <p class="section-desc">
+            Production-proven proficiency across mobile frameworks, system architecture, cloud backends, and hardware
+            integrations.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+
+          <!-- 1. MOBILE -->
+          <div class="expertise-card reveal-on-scroll">
+            <div class="expertise-header">
+              <div class="expertise-icon">📱</div>
+              <h3 class="expertise-title">Mobile Development</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Flutter</span>
+              <span class="skill-pill">Dart</span>
+              <span class="skill-pill">Android Native</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Kotlin</span>
+              <span class="skill-pill">Swift</span>
+              <span class="skill-pill">XML Layouts</span>
+            </div>
+          </div>
+
+          <!-- 2. ARCHITECTURE -->
+          <div class="expertise-card reveal-on-scroll">
+            <div class="expertise-header">
+              <div class="expertise-icon">🏗️</div>
+              <h3 class="expertise-title">Architecture &amp; State</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Clean Architecture</span>
+              <span class="skill-pill">MVVM</span>
+              <span class="skill-pill">MVC</span>
+              <span class="skill-pill">SOLID Principles</span>
+              <span class="skill-pill">GetX</span>
+              <span class="skill-pill">Provider</span>
+              <span class="skill-pill">Riverpod</span>
+              <span class="skill-pill">Bloc / Cubit</span>
+            </div>
+          </div>
+
+          <!-- 3. API & CLOUD -->
+          <div class="expertise-card reveal-on-scroll">
+            <div class="expertise-header">
+              <div class="expertise-icon">☁️</div>
+              <h3 class="expertise-title">API &amp; Cloud Services</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">REST APIs</span>
+              <span class="skill-pill">JSON Parsing</span>
+              <span class="skill-pill">Firebase Auth</span>
+              <span class="skill-pill">Cloud Firestore</span>
+              <span class="skill-pill">Realtime Database</span>
+              <span class="skill-pill">Firebase Functions</span>
+              <span class="skill-pill">FCM Push Notifications</span>
+              <span class="skill-pill">Crashlytics</span>
+            </div>
+          </div>
+
+          <!-- 4. REAL-TIME -->
+          <div class="expertise-card reveal-on-scroll">
+            <div class="expertise-header">
+              <div class="expertise-icon">⚡</div>
+              <h3 class="expertise-title">Real-Time Systems</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">WebSocket</span>
+              <span class="skill-pill">Socket.IO</span>
+              <span class="skill-pill">WebRTC</span>
+              <span class="skill-pill">Audio &amp; Video Calling</span>
+              <span class="skill-pill">Live GPS Location</span>
+              <span class="skill-pill">Bi-directional Sync</span>
+            </div>
+          </div>
+
+          <!-- 5. PAYMENTS -->
+          <div class="expertise-card reveal-on-scroll">
+            <div class="expertise-header">
+              <div class="expertise-icon">💳</div>
+              <h3 class="expertise-title">Payments &amp; Hardware</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Stripe SDK</span>
+              <span class="skill-pill">PayPal</span>
+              <span class="skill-pill">Apple Pay</span>
+              <span class="skill-pill">Razorpay</span>
+              <span class="skill-pill">Paytm</span>
+              <span class="skill-pill">Card Terminal Readers</span>
+              <span class="skill-pill">Thermal Printers</span>
+            </div>
+          </div>
+
+          <!-- 6. PLATFORM & INTEGRATIONS -->
+          <div class="expertise-card reveal-on-scroll">
+            <div class="expertise-header">
+              <div class="expertise-icon">🔌</div>
+              <h3 class="expertise-title">Platform &amp; Integration</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Google Maps SDK</span>
+              <span class="skill-pill">Background Location</span>
+              <span class="skill-pill">Method Channels</span>
+              <span class="skill-pill">Native Android/iOS Integration</span>
+              <span class="skill-pill">SQLite</span>
+              <span class="skill-pill">Hive</span>
+            </div>
+          </div>
+
+          <!-- 7. DEVELOPMENT & WORKFLOW -->
+          <div class="expertise-card reveal-on-scroll">
+            <div class="expertise-header">
+              <div class="expertise-icon">🛠️</div>
+              <h3 class="expertise-title">Development &amp; Workflow</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Git / GitHub / GitLab</span>
+              <span class="skill-pill">Postman</span>
+              <span class="skill-pill">Android Studio</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Play Store Releases</span>
+              <span class="skill-pill">App Store Deployment</span>
+              <span class="skill-pill">Code Reviews</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROFESSIONAL EXPERIENCE SECTION ================= -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Career Journey</div>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-desc">
+            Five years of proven progression delivering and maintaining production software.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- EXPERIENCE 1: BEBUZEE INC. -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <span class="company-name">Bebuzee Inc.</span>
+                <span class="timeline-period">Sep 2023 – Present</span>
+              </div>
+              <div class="role-title">Senior Flutter Developer</div>
+              <ul class="timeline-points">
+                <li>Leading the modernization and architectural refinement of a large-scale production Flutter Super
+                  App.</li>
+                <li>Engineered the ShortBuz short-form video feed with video caching and memory-optimized rendering.
+                </li>
+                <li>Integrated real-time chat, group communication, and WebRTC-based audio/video calling via Socket.IO.
+                </li>
+                <li>Built native platform channel bridges in Kotlin and Swift for platform-specific hardware
+                  capabilities.</li>
+                <li>Integrated multi-gateway payment flows including Stripe, PayPal, and Apple Pay.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE 2: CODEAIR TECHNOLOGIES -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <span class="company-name">CodeAir Technologies</span>
+                <span class="timeline-period">Apr 2022 – Aug 2023</span>
+              </div>
+              <div class="role-title">Junior Flutter Developer → Senior Flutter Developer</div>
+              <ul class="timeline-points">
+                <li>Demonstrated rapid technical progression from Junior to Senior Flutter Developer through high-impact
+                  project deliveries.</li>
+                <li>Engineered enterprise restaurant POS solutions (Basil POS) with thermal kitchen printers and card
+                  reader hardware integrations.</li>
+                <li>Architected two-sided marketplace platforms featuring real-time bidding, Google Maps geolocation,
+                  and escrow payments.</li>
+                <li>Structured projects following Clean Architecture, modular state management (GetX, Provider), and
+                  offline caching.</li>
+                <li>Conducted code reviews, coordinated with junior developers, and managed production App Store and
+                  Google Play releases.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE 3: CYPHERNATE -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <span class="company-name">CYPHERNATE</span>
+                <span class="timeline-period">Nov 2020 – Apr 2022</span>
+              </div>
+              <div class="role-title">Flutter Developer Intern → Flutter Developer → Flutter &amp; Android Developer
+              </div>
+              <ul class="timeline-points">
+                <li>Advanced through multiple promotions: intern to core Flutter developer, expanding into Native
+                  Android (Java) engineering.</li>
+                <li>Built cross-platform Flutter and native Android applications for startup and enterprise clients
+                  across diverse domains.</li>
+                <li>Integrated complex REST APIs, JSON parsing pipelines, Firebase services, and push notifications.
+                </li>
+                <li>Implemented e-commerce cart workflows, payment gateways, and location-aware services.</li>
+                <li>Established foundational software development lifecycle workflows, structured git versioning, and
+                  release packaging.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW I BUILD SECTION ================= -->
+    <section id="process">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Engineering Methodology</div>
+          <h2 class="section-title">How I Build Production Mobile Products</h2>
+          <p class="section-desc">
+            A disciplined, senior-level engineering process ensuring clean code, predictable delivery, and long-term
+            maintainability.
+          </p>
+        </div>
+
+        <div class="process-grid">
+
+          <div class="process-card reveal-on-scroll stagger-1">
+            <div class="process-step">01</div>
+            <h3 class="process-title">Understand</h3>
+            <p class="process-desc">
+              Thorough domain analysis, identifying state models, API contracts, platform constraints, and user journeys
+              before writing production code.
+            </p>
+          </div>
+
+          <div class="process-card reveal-on-scroll stagger-2">
+            <div class="process-step">02</div>
+            <h3 class="process-title">Build</h3>
+            <p class="process-desc">
+              Establishing a Clean Architecture foundation with isolated domain, data, and presentation layers, using
+              responsive UI components and robust state management.
+            </p>
+          </div>
+
+          <div class="process-card reveal-on-scroll stagger-3">
+            <div class="process-step">03</div>
+            <h3 class="process-title">Integrate</h3>
+            <p class="process-desc">
+              Connecting backend REST and WebSocket APIs, setting up secure payment gateways, and bridging native
+              platform capabilities via Method Channels (Kotlin/Swift).
+            </p>
+          </div>
+
+          <div class="process-card reveal-on-scroll stagger-1">
+            <div class="process-step">04</div>
+            <h3 class="process-title">Test &amp; Refine</h3>
+            <p class="process-desc">
+              Profiling memory usage, eliminating UI jank, handling edge-case network states, and validating behavior
+              across diverse device form factors.
+            </p>
+          </div>
+
+          <div class="process-card reveal-on-scroll stagger-2">
+            <div class="process-step">05</div>
+            <h3 class="process-title">Deploy</h3>
+            <p class="process-desc">
+              Managing cryptographic app signing, release tracks, store guideline compliance, and phased rollouts on
+              Google Play Store and Apple App Store.
+            </p>
+          </div>
+
+          <div class="process-card reveal-on-scroll stagger-3">
+            <div class="process-step">06</div>
+            <h3 class="process-title">Maintain</h3>
+            <p class="process-desc">
+              Continuously monitoring telemetry via Crashlytics, quickly triaging live user feedback, and executing
+              architectural modernizations without rewrites.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT / DEVELOPER PROFILE SECTION ================= -->
+    <section id="about">
+      <div class="container">
+        <div class="about-card reveal-on-scroll">
+          <div class="about-content">
+            <div class="section-tag">Profile</div>
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">About Nehanshu Baldha</h2>
+
+            <p class="about-lead">
+              Senior Flutter Developer with 5+ years of experience building, modernizing, and maintaining production
+              mobile applications across consumer and enterprise products.
+            </p>
+
+            <p class="about-body">
+              My engineering approach focuses on clean, predictable software architecture, maintainable code, and
+              responsive user experiences. I have worked across the mobile product lifecycle, from implementing features
+              and integrations to production releases and modernization of existing applications.
+            </p>
+
+            <p class="about-body">
+              My technical background spans Flutter, Native Android (Java/Kotlin), platform channels, real-time
+              communication protocols, payment integrations, and peripheral hardware. I collaborate seamlessly with
+              founders, product teams, and distributed remote engineers to deliver stable, high-performance mobile software.
+            </p>
+
+            <div class="about-tags">
+              <span class="about-tag">Clean Architecture</span>
+              <span class="about-tag">5+ Years Mobile</span>
+              <span class="about-tag">Flutter &amp; Android</span>
+              <span class="about-tag">Store Releases</span>
+              <span class="about-tag">Native Platform Channels</span>
+              <span class="about-tag">Hardware Integrations</span>
+              <span class="about-tag">Remote Worldwide</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT / CLIENT CTA SECTION ================= -->
+    <section id="contact">
+      <div class="container">
+        <div class="cta-banner reveal-on-scroll">
+          <div class="section-tag" style="background: rgba(56, 189, 248, 0.15);">Let's Connect</div>
+          <h2 class="cta-headline">Have a product in mind?</h2>
+          <p class="cta-copy">
+            Let's discuss what you're building and how I can help turn it into a production-ready mobile product.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="mailto:nehanshubaldha24@gmail.com" class="btn btn-primary">Let's Work Together ↗</a>
+            <a href="resume/Nehanshu-Baldha.pdf" target="_blank" class="btn btn-secondary">Download Resume</a>
+          </div>
+
+          <div class="contact-direct">
+            <a href="mailto:nehanshubaldha24@gmail.com" class="contact-link">
+              <span>✉️</span>
+              <span>nehanshubaldha24@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nehanshu-baldha-698a93225/" target="_blank" rel="noopener"
+              class="contact-link">
+              <span>💼</span>
+              <span>LinkedIn Profile ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© 2026 Nehanshu Baldha. Engineered with modern vanilla web standards.</p>
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#hero">Back to Top ↑</a></li>
+      </ul>
     </div>
-  </div>
+  </footer>
 
-</section>
+  <!-- ================= LIGHTWEIGHT CLIENT SCRIPT ================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Reading Progress Bar & Sticky Nav Elevation
+      const progressBar = document.getElementById('scroll-progress');
+      const navbar = document.getElementById('navbar');
 
-<section id="projects">
-  <h2>Selected Projects</h2>
+      const handleScroll = () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-  <div class="project">
-    <h3>
-      <a href="projects/bebuzee.html">Bebuzee — Social Media & Super App</a>
-    </h3>
+        if (progressBar && totalHeight > 0) {
+          const progress = (scrollTop / totalHeight) * 100;
+          progressBar.style.width = progress + '%';
+        }
 
-    <p><strong>Impact:</strong>
-Handled 50K+ users, optimized feed rendering performance by 30%, reduced crash rate below 1%.
-</p>
+        if (navbar) {
+          if (scrollTop > 40) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        }
+      };
 
-  <p><strong>Context:</strong>
-  Large-scale social media & super app with real users
-  and continuous production releases.</p>
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
 
-  <p><strong>My Role:</strong>
-  Senior Flutter Developer owning feature development,
-  performance optimization, and Play Store releases.</p>
+      // 2. Mobile Menu Toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
-  <p><strong>Tech:</strong>
-  Flutter, Dart, GetX, Firebase, REST APIs</p>
-</div>
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          menuToggle.setAttribute('aria-expanded', !isExpanded);
+          mobileMenu.classList.toggle('open');
+          mobileMenu.setAttribute('aria-hidden', isExpanded);
+          document.body.style.overflow = isExpanded ? '' : 'hidden';
+        });
 
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            menuToggle.setAttribute('aria-expanded', 'false');
+            mobileMenu.classList.remove('open');
+            mobileMenu.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+          });
+        });
+      }
 
-  <div class="project">
-    <h3>
-      <a href="projects/pet-marketplace.html">Pet Food & Services Marketplace</a>
-    </h3>
+      // 3. Scroll Reveal Animations (IntersectionObserver)
+      const reveals = document.querySelectorAll('.reveal-on-scroll');
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-  <p><strong>Context:</strong>
-  Marketplace app for booking pet services and purchasing products
-  from nearby providers.</p>
+        reveals.forEach(el => revealObserver.observe(el));
+      } else {
+        reveals.forEach(el => el.classList.add('is-revealed'));
+      }
 
-  <p><strong>My Role:</strong>
-  Built the app end-to-end including booking flows,
-  payments, maps, and notifications.</p>
+      // 4. Ambient Cursor Glow (Desktop Only, respects prefers-reduced-motion)
+      const glow = document.getElementById('cursor-glow');
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const isTouch = window.matchMedia('(hover: none)').matches;
 
-  <p><strong>Tech:</strong>
-  Flutter, Firebase, Google Maps, Payment Gateway</p>
-</div>
+      if (glow && !prefersReducedMotion && !isTouch) {
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let currentX = mouseX;
+        let currentY = mouseY;
 
+        window.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+        }, { passive: true });
 
-  <div class="project">
-    <h3>
-      <a href="projects/employee-marketplace.html">Employee Provider Marketplace (USA)</a>
-    </h3>
+        const animateGlow = () => {
+          currentX += (mouseX - currentX) * 0.08;
+          currentY += (mouseY - currentY) * 0.08;
+          glow.style.left = currentX + 'px';
+          glow.style.top = currentY + 'px';
+          requestAnimationFrame(animateGlow);
+        };
 
-  <p><strong>Context:</strong>
-  Two-sided marketplace connecting job providers and workers
-  with real-time bidding.</p>
-
-  <p><strong>My Role:</strong>
-  Flutter Developer focused on scalable architecture
-  and real-time workflows.</p>
-
-  <p><strong>Tech:</strong>
-  Flutter, Firebase, REST APIs, Google Maps</p>
-</div>
-
-
-  <div class="project">
-    <h3>
-      <a href="projects/textile-erp.html">Textile ERP Mobile Application</a>
-    </h3>
-
-  <p><strong>Context:</strong>
-  Mobile ERP system for inventory, production tracking,
-  and business analytics.</p>
-
-  <p><strong>My Role:</strong>
-  Developed core ERP modules and role-based access.</p>
-
-  <p><strong>Tech:</strong>
-  Flutter, REST APIs, MySQL</p>
-</div>
-
-<div class="project">
-  <h3>
-    <a href="projects/festival-post-app.html">
-      Festival Post & Video Builder App
-    </a>
-  </h3>
-
-  <p><strong>Context:</strong>
-  Marketing-focused mobile application helping businesses
-  create festival posts and promotional videos.</p>
-
-  <p><strong>My Role:</strong>
-  Flutter Developer responsible for building creative workflows,
-  optimizing UI performance, and implementing export & sharing features.</p>
-
-  <p><strong>Tech:</strong>
-  Flutter, Firebase, Video Processing, Social Sharing</p>
-</div>
-
-
-</section>
-
-<section>
-  <h2>Tech Stack</h2>
-
-  <div class="project">
-    <p><strong>Mobile Development</strong></p>
-    <p>Flutter, Dart, Android (Java)</p>
-  </div>
-
-  <div class="project">
-    <p><strong>State Management & Architecture</strong></p>
-    <p>
-      GetX, Provider, Riverpod, Bloc/Cubit,
-      Clean Architecture, MVC, MVVM,
-      SOLID Principles, OOP
-    </p>
-  </div>
-
-  <div class="project">
-    <p><strong>Backend & Cloud</strong></p>
-    <p>
-      REST APIs, JSON, API Authentication,
-      Firebase Functions, Basic PHP,
-      Firebase Authentication, Cloud Firestore,
-      Firebase Cloud Messaging (FCM),
-      Firebase Analytics, Firebase Crashlytics
-    </p>
-  </div>
-
-  <div class="project">
-    <p><strong>Databases & Storage</strong></p>
-    <p>
-      SQLite, Hive, SharedPreferences,
-      MySQL (API-based)
-    </p>
-  </div>
-
-  <div class="project">
-    <p><strong>Tools & Workflow</strong></p>
-    <p>
-      Git (GitHub / GitLab), Android Studio,
-      VS Code, Postman, Agile / Scrum
-    </p>
-  </div>
-
-  <div class="project">
-    <p><strong>Deployment & Practices</strong></p>
-    <p>
-      Google Play Store (Production Releases),
-      Versioning, Rollbacks, Bug Fixing,
-      SDLC, Code Reviews, Performance Optimization
-    </p>
-  </div>
-</section>
-
-
-<section id="contact">
-  <h2>Let’s Work Together</h2>
-
-<p>
-Looking to build a new Flutter app or improve an existing one?
-I’m happy to discuss your requirements and suggest
-the best technical approach.
-</p>
-
-<p><strong>Email:</strong>
-<a href="mailto:nehanshubaldha24@gmail.com">
-nehanshubaldha24@gmail.com
-</a></p>
-
-<p><strong>LinkedIn:</strong>
-<a href="https://www.linkedin.com/in/nehanshu-baldha-698a93225/" target="_blank">
-View Profile
-</a></p>
-
-<p><strong>Availability:</strong>
-Part-time (15–25 hrs/week) • Project-based • Remote</p>
-
-</section>
-
-<section>
-  <h2>How I Work</h2>
-  <div class="cards">
-    <li>
-      <h3>1️⃣ Clear Architecture First</h3>
-      <p>I design scalable clean architecture before writing production code.</p>
-    </li>
-    <li>
-      <h3>2️⃣ Performance Focused</h3>
-      <p>Apps are optimized for smooth UI, low memory usage, and minimal crashes.</p>
-    </li>
-    <li>
-      <h3>3️⃣ Transparent Communication</h3>
-      <p>Weekly updates, structured commits, and clear technical documentation.</p>
-    </li>
-  </div>
-</section>
-
-<section class="cta-section">
-  <h2>Ready to Build Something Great?</h2>
-  <p>
-    If you're looking for a reliable Senior Flutter Developer
-    to build or scale your mobile application,
-    let's connect and discuss your project.
-  </p>
-  <a href="mailto:nehanshubaldha24@gmail.com" class="cta-button">
-    Schedule a Discussion
-  </a>
-</section>
-
-<section class="testimonials">
-  <h2>Client Feedback</h2>
-
-  <div class="testimonial-card">
-    <p>
-      "Nehanshu delivered high-quality Flutter code with clean architecture.
-      His work significantly improved app stability and performance."
-    </p>
-    <span>— Startup Founder, USA</span>
-  </div>
-
-  <div class="testimonial-card">
-    <p>
-      "Reliable, technically strong, and great communication.
-      A true senior-level Flutter engineer."
-    </p>
-    <span>— Product Manager</span>
-  </div>
-</section>
-
-
-
-<footer>
-  <p>© 2026 Nehanshu Baldha</p>
-</footer>
-
-<p style="text-align:center; margin-top:3rem; color:#94a3b8;">
-Focused on building long-term scalable products — not temporary solutions.
-</p>
+        animateGlow();
+      }
+    });
+  </script>
 
 </body>
 
-<script>
-/* ===================================================
-   ULTRA PREMIUM PORTFOLIO MOTION SYSTEM
-   Optimized • Smooth • Production Ready
-=================================================== */
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  /* ================= PRELOADER ================= */
-  window.addEventListener("load", () => {
-    const preloader = document.getElementById("preloader");
-
-    setTimeout(() => {
-      document.body.classList.add("loaded");
-
-      if (preloader) {
-        preloader.style.opacity = "0";
-        preloader.style.visibility = "hidden";
-      }
-    }, 1600);
-  });
-
-
-  /* ================= SMOOTH SCROLL ================= */
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }
-    });
-  });
-
-
-  /* ================= SECTION REVEAL ================= */
-  const sections = document.querySelectorAll("section");
-
-  const sectionObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("reveal");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-
-  sections.forEach(section => {
-    section.classList.add("hidden-section");
-    sectionObserver.observe(section);
-  });
-
-
-  /* ================= STAGGER CARDS ================= */
-  const cards = document.querySelectorAll(
-    ".cards li, .project, .testimonial-card, .metric"
-  );
-
-  const cardObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-
-        setTimeout(() => {
-          entry.target.classList.add("fade-in");
-        }, index * 100);
-
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-
-  cards.forEach(card => {
-    card.classList.add("hidden-card");
-    cardObserver.observe(card);
-  });
-
-
-  /* ================= SCROLL PROGRESS ================= */
-  const progressBar = document.getElementById("scroll-progress");
-
-  window.addEventListener("scroll", () => {
-    if (!progressBar) return;
-
-    const scrollTop = window.scrollY;
-    const height = document.body.scrollHeight - window.innerHeight;
-    const progress = (scrollTop / height) * 100;
-
-    progressBar.style.width = progress + "%";
-  });
-
-
-  /* ================= PARALLAX + GLOW ================= */
-
-  const heroImage = document.querySelector(".hero-right img");
-  const heroText = document.querySelector(".hero-left");
-  const glow = document.getElementById("cursor-glow");
-
-  let mouseX = 0;
-  let mouseY = 0;
-  let currentX = 0;
-  let currentY = 0;
-
-  const isTouchDevice = window.matchMedia("(hover: none)").matches;
-
-  if (!isTouchDevice) {
-
-    window.addEventListener("mousemove", (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
-
-    function animate() {
-      currentX += (mouseX - currentX) * 0.08;
-      currentY += (mouseY - currentY) * 0.08;
-
-      const x = (window.innerWidth / 2 - currentX) / 40;
-      const y = (window.innerHeight / 2 - currentY) / 40;
-
-      /* Hero Parallax */
-      if (heroImage && heroText) {
-        heroImage.style.transform =
-          `translate(${x}px, ${y}px) scale(1.02)`;
-        heroText.style.transform =
-          `translate(${x/2}px, ${y/2}px)`;
-      }
-
-      /* Mouse Glow */
-      if (glow) {
-        glow.style.left = currentX + "px";
-        glow.style.top = currentY + "px";
-      }
-
-      requestAnimationFrame(animate);
-    }
-
-    animate();
-  }
-
-});
-</script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </html>

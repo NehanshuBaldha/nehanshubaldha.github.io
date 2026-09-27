@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basil POS | Flutter Case Study – Nehanshu Baldha</title>
+
+  <link rel="canonical" href="https://nehanshubaldha.github.io/projects/basil-pos.html" />
+  <link rel="stylesheet" href="../style.css" />
+
+  <meta name="description"
+    content="Technical case study of Basil POS, a restaurant point-of-sale and kitchen management system built with Flutter, payment hardware terminals, thermal printers, and KDS." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://nehanshubaldha.github.io/projects/basil-pos.html" />
+  <meta property="og:title" content="Basil POS — Restaurant Point of Sale & Management System" />
+  <meta property="og:description"
+    content="Production engineering case study of Basil POS built with Flutter, hardware card readers, kitchen printers, and Kitchen Display System (KDS)." />
+  <meta property="og:image" content="https://nehanshubaldha.github.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://nehanshubaldha.github.io/og-image.png" />
+</head>
+
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Cursor Glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ================= STICKY NAVIGATION ================= -->
+  <header>
+    <nav class="site-nav scrolled" aria-label="Project Navigation">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-brand">
+          <span>Nehanshu Baldha</span>
+          <span class="brand-badge">PORTFOLIO</span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="../index.html#work" class="btn btn-secondary btn-sm">← All Projects</a>
+          <a href="../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= CASE STUDY HERO ================= -->
+    <header class="case-study-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#work">Projects</a>
+          <span>/</span>
+          <span style="color: var(--text-secondary);">Basil POS</span>
+        </nav>
+
+        <div class="section-tag">Case Study · Enterprise Mobile &amp; Hardware</div>
+        <h1 class="case-study-title">Basil POS</h1>
+        <p class="case-study-subtitle">Restaurant POS &amp; Management System</p>
+
+        <div class="case-meta-grid">
+          <div>
+            <div class="meta-box-label">Role</div>
+            <div class="meta-box-val">Flutter Developer</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Target Environment</div>
+            <div class="meta-box-val">Tablets &amp; Handheld Terminals</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Hardware Integration</div>
+            <div class="meta-box-val">Card Readers, ESC/POS Printers</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Key Tech</div>
+            <div class="meta-box-val">Flutter, REST APIs, Payment Hardware, KDS</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= OVERVIEW & CONTEXT ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="case-grid-2col">
+          <div>
+            <div class="section-tag">Overview</div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 1rem;">Project Overview</h2>
+            <p style="color: var(--text-secondary); line-height: 1.75; font-size: 1.05rem;">
+              Basil POS is an enterprise-grade restaurant Point of Sale and operations management application designed
+              to handle high-frequency hospitality workflows. The platform unites floor ordering, table status
+              management, kitchen order routing (KDS), split billing, custom tipping, hardware payment terminals, and
+              ESC/POS thermal kitchen printing into a unified, crash-resilient mobile interface.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3>Product Context &amp; Objectives</h3>
+            <p>
+              In busy dining environments, software failure or printer disconnects directly halt restaurant revenue. The
+              goal was to build a low-latency, highly stable mobile POS solution with offline-tolerant order queuing,
+              seamless payment terminal handshakes, and immediate ticket synchronization with kitchen display monitors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MY ROLE & RESPONSIBILITIES ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Core Responsibilities</div>
+          <h2 class="section-title">My Technical Contributions</h2>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Ordering &amp; Floor Management</h3>
+            <p>
+              Built reactive dining room floor plans, table state tracking (open, occupied, dessert, check requested),
+              dynamic modifier menu trees, and tax/discount calculations.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Payment Card-Reader Workflows</h3>
+            <p>
+              Implemented direct hardware communication with EMV payment card readers via Bluetooth and USB serial
+              bridges, handling contact chip, contactless tap, and manual card entry.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Kitchen Display System (KDS)</h3>
+            <p>
+              Architected the real-time kitchen display view, enabling line cooks to claim, filter, and bump order
+              tickets across preparation stations with instant POS state feedback.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Thermal Printer Integration</h3>
+            <p>
+              Engineered ESC/POS raw command generators for network and Bluetooth thermal receipt printers, supporting
+              kitchen routing (bar vs. hot line) and cash drawer kick pulses.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Cash Management &amp; End of Day</h3>
+            <p>
+              Developed cash shift auditing tools, shift opening/closing float tracking, drawer discrepancies, and
+              managerial end-of-day X/Z reports.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Production Debugging &amp; Enhancements</h3>
+            <p>
+              Triaged live hardware disconnection anomalies, resolved memory leaks from prolonged multi-hour shifts, and
+              published continuous performance updates to Google Play Store.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNICAL IMPLEMENTATION ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">System Architecture</div>
+          <h2 class="section-title">Hardware &amp; Software Integration Architecture</h2>
+        </div>
+
+        <div class="case-grid-2col">
+          <div class="case-card">
+            <h3>Peripheral Hardware Abstraction</h3>
+            <p style="margin-bottom: 1rem;">
+              POS environments require interfacing with legacy and modern peripherals simultaneously. An abstracted
+              Device Driver Manager was created to handle connection drops, auto-reconnects, and buffer flushes without
+              locking the UI thread.
+            </p>
+            <p>
+              Thermal receipt layouts were rendered using programmatic ESC/POS byte arrays, generating crisp tabular
+              tickets with zero image rasterization delays.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3>Kitchen Order Flow</h3>
+            <div class="workflow-step-chain">
+              <div class="step-node">
+                <span class="step-node-num">01</span>
+                <span>Server inputs order with modifiers at table terminal</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">02</span>
+                <span>Order payload dispatches to backend API with local cache fallback</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">03</span>
+                <span>KDS display syncs ticket; station thermal printer prints prep ticket</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">04</span>
+                <span>Cook bumps ticket → Server alerted of food readiness</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHALLENGES & SOLUTIONS ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Engineering Challenges</div>
+          <h2 class="section-title">Key Challenges Solved</h2>
+        </div>
+
+        <div class="case-grid-2col">
+          <div class="case-card">
+            <h3 style="color: var(--accent-amber);">Challenge: Flaky Local Wi-Fi Interrupting Printing</h3>
+            <p>
+              Restaurant kitchens often suffer from localized network interference from stainless steel appliances and
+              microwave units, causing socket timeouts during receipt printing.
+            </p>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">Solution Implemented:
+              </h4>
+              <p>
+                Built an in-memory persistent print queue that guarantees at-least-once delivery, automatically retrying
+                disconnected printers and alerting managers if a printer remains offline.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-amber);">Challenge: Complex Split-Check Billing States</h3>
+            <p>
+              Handling complex guest bill splits (by seat, by percentage, by individual item sharing) with mixed payment
+              modes (cash + card + tip) creates deep transactional complexity.
+            </p>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">Solution Implemented:
+              </h4>
+              <p>
+                Modeled an immutable transaction ledger in state where split line items maintain parent references and
+                balance reconciliation guards, preventing unpaid item checkout leaks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECH STACK & LINKS ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Stack &amp; Delivery</div>
+          <h2 class="section-title">Verified Technologies &amp; Live Product</h2>
+        </div>
+
+        <div class="tech-badges" style="margin-bottom: 3rem;">
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Flutter</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Dart</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">REST APIs</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Card Reader Hardware</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">ESC/POS Printing</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Kitchen Display System (KDS)</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Offline Caching</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Cash Management</span>
+        </div>
+
+        <div>
+          <a href="https://play.google.com/store/apps/details?id=com.basilPOS" target="_blank" rel="noopener"
+            class="btn btn-primary">
+            <span>View Basil POS on Google Play ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGINATION NAVIGATION ================= -->
+    <nav class="project-pagination container" aria-label="Project Case Studies">
+      <div>
+        <a href="skilled-services-marketplace.html" class="btn btn-outline">
+          <span>← Previous: Skilled Services Marketplace</span>
+        </a>
+      </div>
+      <div>
+        <a href="petoriz.html" class="btn btn-outline">
+          <span>Next: Petoriz →</span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nehanshu Baldha. All rights reserved.</p>
+      <a href="../index.html" class="contact-link">Back to Homepage ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const progressBar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      if (progressBar && totalHeight > 0) {
+        progressBar.style.width = (scrollTop / totalHeight * 100) + '%';
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+
+</html>

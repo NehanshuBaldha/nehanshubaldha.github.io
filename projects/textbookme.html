@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TextBookMe | Native Android Case Study – Nehanshu Baldha</title>
+
+  <link rel="canonical" href="https://nehanshubaldha.github.io/projects/textbookme.html" />
+  <link rel="stylesheet" href="../style.css" />
+
+  <meta name="description"
+    content="Technical case study of TextBookMe, a location-aware native Android student textbook marketplace built with Java, XML, and RESTful APIs for Canadian college campuses." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://nehanshubaldha.github.io/projects/textbookme.html" />
+  <meta property="og:title" content="TextBookMe — Student Textbook Marketplace (Native Android)" />
+  <meta property="og:description"
+    content="Native Android engineering case study of TextBookMe: campus location search, multi-image listing, and REST API integration." />
+  <meta property="og:image" content="https://nehanshubaldha.github.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://nehanshubaldha.github.io/og-image.png" />
+</head>
+
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Cursor Glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ================= STICKY NAVIGATION ================= -->
+  <header>
+    <nav class="site-nav scrolled" aria-label="Project Navigation">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-brand">
+          <span>Nehanshu Baldha</span>
+          <span class="brand-badge">PORTFOLIO</span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="../index.html#work" class="btn btn-secondary btn-sm">← All Projects</a>
+          <a href="../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= CASE STUDY HERO ================= -->
+    <header class="case-study-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#work">Projects</a>
+          <span>/</span>
+          <span style="color: var(--text-secondary);">TextBookMe</span>
+        </nav>
+
+        <div class="section-tag">Freelance Android Project · Canada</div>
+        <h1 class="case-study-title">TextBookMe</h1>
+        <p class="case-study-subtitle">Student Textbook Marketplace</p>
+
+        <div class="case-meta-grid">
+          <div>
+            <div class="meta-box-label">Role</div>
+            <div class="meta-box-val">Android Developer (Freelance)</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Target Market</div>
+            <div class="meta-box-val">Canadian Universities &amp; Colleges</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Platform</div>
+            <div class="meta-box-val">Native Android (Java/XML)</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Key Tech</div>
+            <div class="meta-box-val">Java, Android SDK, REST APIs, Location</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= OVERVIEW & CONTEXT ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="case-grid-2col">
+          <div>
+            <div class="section-tag">Overview</div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 1rem;">Project Overview</h2>
+            <p style="color: var(--text-secondary); line-height: 1.75; font-size: 1.05rem;">
+              TextBookMe is a localized native Android peer-to-peer marketplace engineered specifically for higher
+              education students across Canada. The platform provides university and college students with an
+              affordable, safe channel to buy, sell, and trade pre-owned course textbooks, study guides, and academic
+              supplies directly within their respective campus radius.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3>Product Context &amp; Objectives</h3>
+            <p>
+              University students face exorbitant textbook costs alongside steep campus bookstore commission margins.
+              TextBookMe eliminates middlemen by connecting buyers and sellers on the same campus, requiring a
+              lightweight, location-aware Android application that operates reliably on a broad range of budget and
+              flagship Android devices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MY ROLE & RESPONSIBILITIES ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Core Responsibilities</div>
+          <h2 class="section-title">My Technical Contributions</h2>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Native Android Architecture</h3>
+            <p>
+              Built the complete client-side architecture in Java and XML layouts following clean separation between
+              Activities, Fragments, ViewHolders, and API Service layers.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Campus Location Discovery</h3>
+            <p>
+              Implemented location-aware filtering using Android Location Services to automatically detect nearest
+              universities/colleges and surface relevant academic listings.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Seller Listing &amp; Image Pipeline</h3>
+            <p>
+              Engineered the multi-step listing creator: camera/gallery integration, multi-photo file compression, ISBN
+              auto-fill metadata, and condition tags (New, Like New, Fair).
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">REST API Integration</h3>
+            <p>
+              Integrated RESTful endpoints for student authentication, JWT token persistence, listing search queries,
+              pagination, and direct buyer-seller messaging.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Memory &amp; Layout Optimization</h3>
+            <p>
+              Optimized RecyclerView adapter recycling, Glide image caching, and view hierarchy flattening to achieve
+              smooth scrolling across budget Android hardware.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Google Play Deployment</h3>
+            <p>
+              Prepared Android App Bundles (AAB), configured ProGuard obfuscation rules, managed keystore signing, and
+              successfully deployed the application to Google Play Store.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNICAL IMPLEMENTATION ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Architecture</div>
+          <h2 class="section-title">Native Android Implementation Details</h2>
+        </div>
+
+        <div class="case-grid-2col">
+          <div class="case-card">
+            <h3>Image Compression &amp; Upload Flow</h3>
+            <p style="margin-bottom: 1rem;">
+              Mobile listings require high-resolution cover photos for buyers to inspect condition, yet unconstrained
+              camera uploads quickly saturate bandwidth.
+            </p>
+            <p>
+              Implemented a background compression pipeline that downsamples bitmap buffers, strips unnecessary EXIF
+              metadata, and converts photos to efficient JPEGs before multipart upload, reducing payload sizes by over
+              80%.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3>Marketplace Discovery Flow</h3>
+            <div class="workflow-step-chain">
+              <div class="step-node">
+                <span class="step-node-num">01</span>
+                <span>Student opens app → GPS detects campus vicinity or user selects institution</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">02</span>
+                <span>Search by course code, department, author, or 10/13-digit ISBN</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">03</span>
+                <span>Detailed book inspect view with photos, highlighted pages notes, price</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">04</span>
+                <span>Direct in-app communication established for safe on-campus pickup</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHALLENGES & SOLUTIONS ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Engineering Challenges</div>
+          <h2 class="section-title">Key Challenges Solved</h2>
+        </div>
+
+        <div class="case-grid-2col">
+          <div class="case-card">
+            <h3 style="color: var(--accent-amber);">Challenge: Fragmented Android Device Memory Limits</h3>
+            <p>
+              College students utilize a wide spectrum of legacy Android versions and low-RAM devices where large image
+              feeds frequently trigger `OutOfMemoryError` crashes.
+            </p>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">Solution Implemented:
+              </h4>
+              <p>
+                Tuned Glide bitmap pooling with `RGB_565` format decoding for thumbnail lists, paired with proactive
+                memory trimming hooks during system memory pressure events.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-amber);">Challenge: Flaky Network on Campus Wi-Fi</h3>
+            <p>
+              Students moving between lecture halls experience frequent access-point handoffs, resulting in aborted
+              multipart uploads when publishing new textbook listings.
+            </p>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">Solution Implemented:
+              </h4>
+              <p>
+                Implemented an idempotent upload queue with exponential backoff retries, ensuring draft listings remain
+                safely saved locally until successfully confirmed by the server.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECH STACK & LINKS ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Stack &amp; Delivery</div>
+          <h2 class="section-title">Verified Technologies &amp; Live App</h2>
+        </div>
+
+        <div class="tech-badges" style="margin-bottom: 3rem;">
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Java</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Android SDK</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">XML Layouts</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">REST APIs</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Location Services</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Glide Image Loading</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Gradle Build Tools</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">ProGuard Obfuscation</span>
+        </div>
+
+        <div>
+          <a href="https://play.google.com/store/apps/details?id=com.bookselling.app" target="_blank" rel="noopener"
+            class="btn btn-primary">
+            <span>View TextBookMe on Google Play ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGINATION NAVIGATION ================= -->
+    <nav class="project-pagination container" aria-label="Project Case Studies">
+      <div>
+        <a href="petoriz.html" class="btn btn-outline">
+          <span>← Previous: Petoriz</span>
+        </a>
+      </div>
+      <div>
+        <a href="bebuzee.html" class="btn btn-outline">
+          <span>Back to Project 01: Bebuzee Super App →</span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nehanshu Baldha. All rights reserved.</p>
+      <a href="../index.html" class="contact-link">Back to Homepage ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const progressBar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      if (progressBar && totalHeight > 0) {
+        progressBar.style.width = (scrollTop / totalHeight * 100) + '%';
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+
+</html>

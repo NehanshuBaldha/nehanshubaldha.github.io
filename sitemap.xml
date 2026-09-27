@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://nehanshubaldha.github.io/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://nehanshubaldha.github.io/projects/bebuzee.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://nehanshubaldha.github.io/projects/pet-marketplace.html</loc>
+    <loc>https://nehanshubaldha.github.io/projects/skilled-services-marketplace.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://nehanshubaldha.github.io/projects/employee-marketplace.html</loc>
+    <loc>https://nehanshubaldha.github.io/projects/basil-pos.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://nehanshubaldha.github.io/projects/textile-erp.html</loc>
+    <loc>https://nehanshubaldha.github.io/projects/petoriz.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://nehanshubaldha.github.io/projects/festival-post-app.html</loc>
+    <loc>https://nehanshubaldha.github.io/projects/textbookme.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
 </urlset>

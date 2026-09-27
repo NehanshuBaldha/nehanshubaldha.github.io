@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petoriz | Flutter Case Study – Nehanshu Baldha</title>
+
+  <link rel="canonical" href="https://nehanshubaldha.github.io/projects/petoriz.html" />
+  <link rel="stylesheet" href="../style.css" />
+
+  <meta name="description"
+    content="Technical case study of Petoriz, a comprehensive pet products and veterinary/grooming services marketplace built with Flutter, GetX, Stripe, and Google Maps." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://nehanshubaldha.github.io/projects/petoriz.html" />
+  <meta property="og:title" content="Petoriz — Pet Products & Services Marketplace" />
+  <meta property="og:description"
+    content="Engineering case study of Petoriz: e-commerce catalog, clinic appointments, Stripe saved cards, and GetX state management." />
+  <meta property="og:image" content="https://nehanshubaldha.github.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://nehanshubaldha.github.io/og-image.png" />
+</head>
+
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Cursor Glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ================= STICKY NAVIGATION ================= -->
+  <header>
+    <nav class="site-nav scrolled" aria-label="Project Navigation">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-brand">
+          <span>Nehanshu Baldha</span>
+          <span class="brand-badge">PORTFOLIO</span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="../index.html#work" class="btn btn-secondary btn-sm">← All Projects</a>
+          <a href="../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= CASE STUDY HERO ================= -->
+    <header class="case-study-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#work">Projects</a>
+          <span>/</span>
+          <span style="color: var(--text-secondary);">Petoriz</span>
+        </nav>
+
+        <div class="section-tag">Case Study · E-Commerce &amp; Bookings</div>
+        <h1 class="case-study-title">Petoriz</h1>
+        <p class="case-study-subtitle">Pet Products &amp; Services Marketplace</p>
+
+        <div class="case-meta-grid">
+          <div>
+            <div class="meta-box-label">Role</div>
+            <div class="meta-box-val">Flutter Developer</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Domain</div>
+            <div class="meta-box-val">Pet Health &amp; E-Commerce</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Platforms</div>
+            <div class="meta-box-val">Android &amp; iOS</div>
+          </div>
+          <div>
+            <div class="meta-box-label">Key Tech</div>
+            <div class="meta-box-val">Flutter, GetX, Stripe, SQLite, Maps</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= OVERVIEW & CONTEXT ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="case-grid-2col">
+          <div>
+            <div class="section-tag">Overview</div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 1rem;">Project Overview</h2>
+            <p style="color: var(--text-secondary); line-height: 1.75; font-size: 1.05rem;">
+              Petoriz is a consumer mobile application designed to simplify pet parenthood by merging commercial product
+              shopping with veterinary and grooming appointment scheduling. The platform allows pet owners to purchase
+              diet products and medications, discover nearby pet care clinics on interactive maps, book confirmed
+              service slots, and receive automated vaccination and care reminders.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3>Product Context &amp; Objectives</h3>
+            <p>
+              Pet owners traditionally navigate disjointed platforms for buying supplies versus scheduling clinic
+              visits. Petoriz unified these distinct user journeys into a cohesive mobile interface, requiring a
+              synchronized state architecture capable of handling physical product shipping logistics alongside digital
+              appointment calendar bookings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MY ROLE & RESPONSIBILITIES ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Core Responsibilities</div>
+          <h2 class="section-title">My Technical Contributions</h2>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Product Marketplace &amp; Cart</h3>
+            <p>
+              Engineered the multi-category product catalog, search filters, product variants (sizes, flavors, weights),
+              persistent shopping cart, and coupon redemption workflows.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Appointment Scheduling Engine</h3>
+            <p>
+              Built interactive calendar slot pickers for veterinary consultations, pet grooming, and boarding, handling
+              clinic working hours, practitioner availability, and holiday blackouts.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Stripe Payment &amp; Saved Cards</h3>
+            <p>
+              Integrated Stripe Customer and PaymentMethod APIs for secure card tokenization, 1-click repeat checkouts,
+              automated pre-authorizations, and refund processing.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Local SQLite Caching</h3>
+            <p>
+              Implemented SQLite local database caching for user pet profiles, vaccination records, offline cart
+              persistence, and instant catalog rendering upon app launch.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Location Services &amp; Maps</h3>
+            <p>
+              Integrated Google Maps SDK with custom clinic marker clustering, distance radius filtering, and direct
+              turn-by-turn directions launching.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-cyan);">Client Communication &amp; Architecture</h3>
+            <p>
+              Collaborated directly with client product leadership to structure the GetX clean architecture, validate UX
+              flows, and integrate REST backend endpoints.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNICAL IMPLEMENTATION ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Architecture</div>
+          <h2 class="section-title">State Management &amp; Offline Data Strategy</h2>
+        </div>
+
+        <div class="case-grid-2col">
+          <div class="case-card">
+            <h3>GetX Reactive Architecture</h3>
+            <p style="margin-bottom: 1rem;">
+              The application leverages GetX controllers bound to specific feature lifecycles (`CartController`,
+              `AppointmentController`, `PetProfileController`). Observables (`RxList`, `RxBool`) ensure reactive UI
+              recalculations for cart totals, shipping rates, and slot availability without manual `setState`
+              propagation.
+            </p>
+            <p>
+              Persistent data such as active carts and medical alerts are backed by SQLite tables, synchronizing with
+              backend REST endpoints whenever internet connectivity is restored.
+            </p>
+          </div>
+
+          <div class="case-card">
+            <h3>Booking &amp; Checkout Lifecycle</h3>
+            <div class="workflow-step-chain">
+              <div class="step-node">
+                <span class="step-node-num">01</span>
+                <span>User selects pet profile &amp; chooses clinical service category</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">02</span>
+                <span>Nearby clinics discovered via Google Maps location radius</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">03</span>
+                <span>Real-time slot reservation confirmed via Stripe payment authorization</span>
+              </div>
+              <div class="step-node">
+                <span class="step-node-num">04</span>
+                <span>Automated FCM push notifications &amp; local calendar appointment sync</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHALLENGES & SOLUTIONS ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Engineering Challenges</div>
+          <h2 class="section-title">Key Challenges Solved</h2>
+        </div>
+
+        <div class="case-grid-2col">
+          <div class="case-card">
+            <h3 style="color: var(--accent-amber);">Challenge: Dual Cart &amp; Booking State Synchronization</h3>
+            <p>
+              Managing both physical merchandise (which requires warehouse inventory checks and shipping addresses) and
+              time-based clinic bookings (which require slot holds and veterinary staff assignments) in a unified
+              checkout flow risked transactional deadlocks.
+            </p>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">Solution Implemented:
+              </h4>
+              <p>
+                Architected distinct checkout coordinators that validate item inventory and appointment holds in
+                isolated micro-steps before initiating a consolidated Stripe PaymentIntent.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <h3 style="color: var(--accent-amber);">Challenge: Offline Pet Health Records</h3>
+            <p>
+              Pet parents visiting veterinary hospitals frequently experience cellular dead-zones in clinical basements,
+              making cloud-only medical profiles inaccessible during triage.
+            </p>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">Solution Implemented:
+              </h4>
+              <p>
+                Implemented an offline-first SQLite database schema storing encrypted local pet medical charts,
+                prescription histories, and dietary notes with automatic cloud sync.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECH STACK ================= -->
+    <section class="case-content-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Stack &amp; Delivery</div>
+          <h2 class="section-title">Verified Technologies Used</h2>
+        </div>
+
+        <div class="tech-badges">
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Flutter</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Dart</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">GetX State Management</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">SQLite Local Database</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Stripe Customer API</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Google Maps SDK</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">WebSocket</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">Firebase Cloud Messaging</span>
+          <span class="tech-tag" style="font-size: 0.9rem; padding: 0.4rem 0.9rem;">REST APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGINATION NAVIGATION ================= -->
+    <nav class="project-pagination container" aria-label="Project Case Studies">
+      <div>
+        <a href="basil-pos.html" class="btn btn-outline">
+          <span>← Previous: Basil POS</span>
+        </a>
+      </div>
+      <div>
+        <a href="textbookme.html" class="btn btn-outline">
+          <span>Next: TextBookMe →</span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nehanshu Baldha. All rights reserved.</p>
+      <a href="../index.html" class="contact-link">Back to Homepage ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const progressBar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      if (progressBar && totalHeight > 0) {
+        progressBar.style.width = (scrollTop / totalHeight * 100) + '%';
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+
+</html>
